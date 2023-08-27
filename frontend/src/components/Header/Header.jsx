@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import app from "../../assets/images/apps.png";
 import { NavLink, Link } from "react-router-dom";
 import userImg from "../../assets/images/muhib.png";
+import {BiMenu} from "react-icons/bi"
 
 const navlinks = [
   {
@@ -23,10 +24,28 @@ const navlinks = [
 ];
 
 const Header = () => {
+  const headerRef = useRef(null)
+  const menuRef = useRef(null)
+
+  const handleStickyHeader = () => {
+    window.addEventListener('scroll', () => {
+      if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        headerRef.current.classList.add('sticky__header')
+      }else {
+        headerRef.current.classList.remove('sticky__header')
+      }
+    })
+  }
+
+  useEffect(() => {
+    handleStickyHeader()
+
+    return () => window.removeEventListener('scroll', handleStickyHeader)
+  })
   return (
-    <header className="header flex items-center">
+    <header ref={headerRef} className="header flex items-center leading-[100px] h-[100px] bg-gradient-to-r from-cyan-100 via-white to-yellow-100">
       <div className="container">
-        <div className="flex tems-center justify-between">
+        <div className="flex items-center justify-between">
           {/* logo */}
           <div>
             <img src={app} alt="" />
@@ -53,7 +72,7 @@ const Header = () => {
           {/* nav right */}
 
           <div className="flex items-center gap-4">
-            <div>
+            <div className="hidden">
               <Link to="/">
                 <figure className="w-[35px] h-[35px] rounded-full">
                   <img src={userImg} className="w-full rounded-full" alt="" />
@@ -66,6 +85,10 @@ const Header = () => {
                 Login
               </button>
             </Link>
+            
+            <span className="md:hidden">
+              <BiMenu className="w-6 h-6 cursor-pointer" />
+            </span>
           </div>
         </div>
       </div>
