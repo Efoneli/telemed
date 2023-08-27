@@ -1,11 +1,12 @@
 import React from 'react'
+import 
 
 const Home = () => {
   return (
     <>
-      <section className='hero__section pt-[60px] 2xl:h-[800px]'>
+      <section className='hero__section pt-[60px] 2xl:h-[800px] bg-gradient-to-br from-cyan-100 via-white to-yellow-100'>
         <div className='container'>
-          <div className='flex flex-col lg: flex-row gap-[90px] items-center justify-between'>
+          <div className='flex flex-col lg:flex-row gap-[90px] items-center justify-between'>
             {/* hero content */}
             <div>
               <div className='lg:w-[570px]'>
@@ -15,6 +16,37 @@ const Home = () => {
                 <p className='text__para'>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam delectus saepe qui nihil eos libero, esse impedit, hic repudiandae adipisci deserunt. Placeat voluptates veritatis deleniti odit, voluptas possimus corrupti quam maiores! Impedit exercitationem id quaerat doloremque perferendis est delectus, perspiciatis repudiandae inventore laudantium accusantium non vitae odit eum voluptatibus pariatur.
                 </p>
+                <button className='btn'>Request an application</button>
+              </div>
+
+              {/* hero counter  */}
+              <div className='mt-[30px] lg:mt-[70px] flex flex-col lg:flex-row lg:items-center gap-5'>
+                <div>
+                  <h2 className='text-[36px] leading-[56px] lg:text-[44px] lg:leading-[54px] font-[700] text-headingColor'>30+</h2>
+                  <span className='w-[100px] h-2 bg-yellowColor rounded-full block mt-[- 14px]'></span>
+                  <p className='text__para'>Years of Experience</p>
+                </div>
+                <div>
+                  <h2 className='text-[36px] leading-[56px] lg:text-[44px] lg:leading-[54px] font-[700] text-headingColor'>15+</h2>
+                  <span className='w-[100px] h-2 bg-purpleColor rounded-full block mt-[-14px]'></span>
+                  <p className='text__para'>Clinic Location</p>
+                </div>
+                <div>
+                  <h2 className='text-[36px] leading-[56px] lg:text-[44px] lg:leading-[54px] font-[700] text-headingColor'>100%</h2>
+                  <span className='w-[100px] h-2 bg-irishBlueColor rounded-full block mt-[-14px]'></span>
+                  <p className='text__para'>Patient Satisfactory</p>
+                </div>
+              </div>
+            </div>
+
+            {/* hero content */}
+            <div className='flex gap-[30px] justify-end'>
+              <div>
+                <img src={heroImage} alt='' className='w-full' />
+              </div>
+              <div className='mt-[30px]'>
+              <img src={heroImage} alt='' className='w-full mb-[30px]' />
+              <img src={heroImage} alt='' className='w-full' />
               </div>
             </div>
           </div>
