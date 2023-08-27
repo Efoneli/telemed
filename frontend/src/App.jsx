@@ -1,12 +1,9 @@
-import { useState } from 'react'
+import "./app.css"
+import Layout from "./layout/Layout"
 
 function App() {
 
-  return (
-    <>
-    <h1 className='bg-red-500'>Hello</h1>
-    </>
-  )
+  return <Layout />
 }
 
 export default App
