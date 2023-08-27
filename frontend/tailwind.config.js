@@ -6,11 +6,12 @@ export default {
   ],
   theme: {
     extend: {
-      buttonColor: "#0067ff",
-      yellowColor: "#ffeb0d",
+      primaryColor: "#0067FF",
+      yellowColor: "#feb60d",
       purpleColor: "#9771ff",
       irishBlueColor: "#01b5c5",
       headingColor: "#4e545f",
+      textColor: "#4e545f",
     },
 
     boxShadow: {
