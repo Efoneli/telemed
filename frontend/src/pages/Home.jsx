@@ -8,6 +8,7 @@ import icon3 from '../assets/images/icon03.png'
 import { Link } from 'react-router-dom'
 import { BsArrowRight, } from 'react-icons/bs'
 import About from '../components/About/About'
+import ServiceList from '../components/services/ServiceList'
 
 const Home = () => {
   return (
@@ -143,15 +144,17 @@ const Home = () => {
 
     <section>
       <div className='container'>
-
+        <div className='xl:w-[470px] mx-auto'>
+          <h2 className='heading text-center'>Our medical services</h2>
+          <p>
+            World class care for evryone. Our health care system offers unmatched, expert health care.
+          </p>
+        </div>
+        <ServiceList />
       </div>
-
-    </section>
-
           {/* service section start */}
 
-
-
+    </section>
     </>
   )
 }
