@@ -1,5 +1,6 @@
 import React from 'react'
-import 
+import heroImage from '../assets/images/muhib.png'
+import icon from '../assets/images/design.png'
 
 const Home = () => {
   return (
@@ -50,6 +51,29 @@ const Home = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      
+      <section>
+        <div className="container">
+          <div className='lg:w-[470px] mx-auto'>
+            <h2 className='heading text-center'>
+              Providing the best medical services
+            </h2>
+            <p className='text__para text-center'>
+              World class care for everyone. Our health system offers unmatched, expert health care.
+            </p>
+          </div>
+
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-[30px] mt-[30px] lg:mt-[55px]'>
+            <div className='py-[30px] px-5'>
+              <div className='flex items-center justify-center'>
+                <img src='{icon}' alt='' />
+              </div>
+            </div>
+
+          </div>
+
         </div>
       </section>
     </>

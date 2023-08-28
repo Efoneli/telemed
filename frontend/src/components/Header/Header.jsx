@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import app from "../../assets/images/apps.png";
 import { NavLink, Link } from "react-router-dom";
 import userImg from "../../assets/images/muhib.png";
-import {BiMenu} from "react-icons/bi"
+import { BiMenu } from "react-icons/bi";
 
 const navlinks = [
   {
@@ -24,29 +24,35 @@ const navlinks = [
 ];
 
 const Header = () => {
-  const headerRef = useRef(null)
-  const menuRef = useRef(null)
+  const headerRef = useRef(null);
+  const menuRef = useRef(null);
 
   const handleStickyHeader = () => {
-    window.addEventListener('scroll', () => {
-      if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        headerRef.current.classList.add('sticky__header')
-      }else {
-        headerRef.current.classList.remove('sticky__header')
+    window.addEventListener("scroll", () => {
+      if (
+        document.body.scrollTop > 80 ||
+        document.documentElement.scrollTop > 80
+      ) {
+        headerRef.current.classList.add("sticky__header");
+      } else {
+        headerRef.current.classList.remove("sticky__header");
       }
-    })
-  }
+    });
+  };
 
   useEffect(() => {
-    handleStickyHeader()
+    handleStickyHeader();
 
-    return () => window.removeEventListener('scroll', handleStickyHeader)
-  })
+    return () => window.removeEventListener("scroll", handleStickyHeader);
+  });
 
-  const toggleMenu = () => menuRef.current.classList.toggle('show__menu')
+  const toggleMenu = () => menuRef.current.classList.toggle("show__menu");
 
   return (
-    <header ref={headerRef} className="header flex items-center leading-[100px] h-[100px] bg-gradient-to-r from-cyan-100 via-white to-yellow-100">
+    <header
+      ref={headerRef}
+      className="header flex items-center leading-[100px] h-[100px] bg-gradient-to-r from-cyan-100 via-white to-yellow-100"
+    >
       <div className="container">
         <div className="flex items-center justify-between">
           {/* logo */}
@@ -54,13 +60,13 @@ const Header = () => {
             <img src={app} alt="" />
           </div>
           {/* menu list */}
-          <div ref={menuRef} onClick={toggleMenu } className="navigation">
+          <div ref={menuRef} onClick={toggleMenu} className="navigation">
             <ul className="menu flex items-center gap-[2.7rem]">
               {navlinks.map((link, index) => (
                 <li key={index}>
                   <NavLink
                     to={link.path}
-                    className={navClass =>
+                    className={(navClass) =>
                       navClass.isActive
                         ? "text-primaryColor text-[16px] leading-7 font-[600]"
                         : "text-textColor text-[16px] leading-7 font-[500] hover:text-primarycolor"
@@ -88,7 +94,7 @@ const Header = () => {
                 Login
               </button>
             </Link>
-            
+
             <span className="md:hidden" onClick={toggleMenu}>
               <BiMenu className="w-6 h-6 cursor-pointer" />
             </span>
