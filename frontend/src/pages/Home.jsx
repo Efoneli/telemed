@@ -1,4 +1,3 @@
-import React from 'react'
 import heroImage from '../assets/images/hero-img01.png'
 import heroImage2 from '../assets/images/hero-img02.png'
 import heroImage3 from '../assets/images/hero-img03.png'
