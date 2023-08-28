@@ -1,6 +1,8 @@
 import React from 'react'
-import heroImage from '../assets/images/muhib.png'
-import icon from '../assets/images/design.png'
+import heroImage from '../assets-void/images/muhib.png'
+import heroImage2 from '../assets-void/images/bruno.jpg'
+import heroImage3 from '../assets-void/images/sander.jpg'
+import icon from '../assets-void/images/design.png'
 
 const Home = () => {
   return (
@@ -46,8 +48,8 @@ const Home = () => {
                 <img src={heroImage} alt='' className='w-full' />
               </div>
               <div className='mt-[30px]'>
-              <img src={heroImage} alt='' className='w-full mb-[30px]' />
-              <img src={heroImage} alt='' className='w-full' />
+              <img src={heroImage2} alt='' className='w-full mb-[30px]' />
+              <img src={heroImage3} alt='' className='w-full' />
               </div>
             </div>
           </div>

@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
-import app from "../../assets/images/apps.png";
+import app from "../../assets-void/images/apps.png";
 import { NavLink, Link } from "react-router-dom";
-import userImg from "../../assets/images/muhib.png";
+import userImg from "../../assets-void/images/muhib.png";
 import { BiMenu } from "react-icons/bi";
 
 const navlinks = [
