@@ -286,9 +286,9 @@ const Home = () => {
               World class care for everyone. Our health system offers unmatched, expert health care.
             </p>
           </div>
+          
+          <Testimonial />
         </div>
-
-        <Testimonial />
       </section>
 
         {/* TESTIMONIAL */}
