@@ -5,6 +5,7 @@ import icon1 from "../assets/images/icon01.png";
 import icon2 from "../assets/images/icon02.png";
 import icon3 from "../assets/images/icon03.png";
 import featureImg from "../assets/images/feature-img.png";
+import faqImg from "../assets/images/faq-img.png";
 import avatatIcon from "../assets/images/avatar-icon.png";
 import videoIcon from "../assets/images/video-icon.png";
 import { Link } from "react-router-dom";
@@ -12,6 +13,7 @@ import { BsArrowRight } from "react-icons/bs";
 import About from "../components/About/About";
 import ServiceList from "../components/services/ServiceList";
 import DoctorList from "../components/Doctors/DoctorList";
+import FaqList from "../components/Faq/FaqList";
 
 const Home = () => {
   return (
@@ -160,13 +162,10 @@ const Home = () => {
       </section>
 
       {/* about section start */}
-
       <About />
-
       {/* about section end */}
 
       {/* service section start */}
-
       <section>
         <div className="container">
           <div className="xl:w-[470px] mx-auto">
@@ -180,6 +179,7 @@ const Home = () => {
         </div>
         {/* service section start */}
       </section>
+      {/* service section start */}
 
       {/* feature section */}
       <section>
@@ -220,29 +220,31 @@ const Home = () => {
                     </p>
                   </div>
                   <span className="w-5 h-5 lg:w-[34px] lg:h-[34px] flex items-center justify-center bg-yellowColor rounded py-1 px-[6px] lg:px-[9px]">
-                    <img src={videoIcon} alt='' />
+                    <img src={videoIcon} alt="" />
                   </span>
                 </div>
 
-                <div className='w-[65px] lg:w-[96px] bg-[#ccf0f3] py-1 px-2 lg:py-[6px] lg:px-[10px] text-[8px] leading-[8px] lg:text-[12px] lg:leading-4 text-irishBlueColor font-[500] mt-2 lg:mt-4 rounded-full'>
-                Consultation
+                <div className="w-[65px] lg:w-[96px] bg-[#ccf0f3] py-1 px-2 lg:py-[6px] lg:px-[10px] text-[8px] leading-[8px] lg:text-[12px] lg:leading-4 text-irishBlueColor font-[500] mt-2 lg:mt-4 rounded-full">
+                  Consultation
                 </div>
 
                 <div className="flex items-center gap-[6px] lg:gap-[10px] mt-2 lg:mt-[18px]">
-                  <img src={avatatIcon} alt='' />
-                  <h4 className='text-[10px] leading-3 lg:text-[16px] lg:leading-[22px] font-[700] text-headingColor'>Wayne Collins</h4>
+                  <img src={avatatIcon} alt="" />
+                  <h4 className="text-[10px] leading-3 lg:text-[16px] lg:leading-[22px] font-[700] text-headingColor">
+                    Wayne Collins
+                  </h4>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+      {/* feature section */}
 
       {/* our great doctors */}
-
       <section>
         <div className="container">
-        <div className="xl:w-[470px] mx-auto">
+          <div className="xl:w-[470px] mx-auto">
             <h2 className="heading text-center">Our great doctors</h2>
             <p>
               World class care for evryone. Our health care system offers
@@ -253,6 +255,28 @@ const Home = () => {
           <DoctorList />
         </div>
       </section>
+      {/* our great doctors */}
+
+      {/* faq section */}
+        <section>
+          <div className="container">
+            <div className="flex justify-between gap-[50px] lg:gap-0 ">
+              <div className="w-1/2 hidden md:block">
+                <img src={faqImg} alt='' />
+              </div>
+
+              <div className="w-full md:w-1/2">
+                <h2 className="heading">
+                  Most Questions by our beloved patients
+                </h2>
+                <FaqList />
+              </div>
+
+              
+            </div>
+          </div>
+        </section>
+      {/* faq section */}
     </>
   );
 };
