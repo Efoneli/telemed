@@ -1,6 +1,7 @@
 import React from "react";
-import {Pagination} from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
+// import {Pagination} from "swiper";
+import {Swiper, SwiperSlide} from "swiper/react";
+
 import "swiper/css";
 import "swiper/css/pagination";
 import patientAvatar from "../../assets/images/patient-avatar.png";
@@ -10,7 +11,7 @@ const Testimonial = () => {
   return (
     <div className="mt-[30px] lg:[55px]">
       <Swiper
-        modules={[Pagination]}
+        // modules={[Pagination]}
         spaceBetween={30}
         slidesPerView={1}
         pagination={{clickable:true}}
