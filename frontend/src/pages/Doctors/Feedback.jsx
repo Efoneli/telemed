@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import avatar from '../../assets/images/avatar-icon.png'
 import { formateDate } from '../../utils/formateDate'
 import {AiFillStar} from 'react-icons/ai'
@@ -27,7 +27,7 @@ const Feedback = () => {
                     {formateDate('02-14-2023')}
                 </p>
                 <p className='text__para mt-3 font-medium text-[15px]'>
-                    Good services, highly recommended 
+                    Good services, highly recommended 👍
                 </p>
                 </div>
             </div>
@@ -41,9 +41,11 @@ const Feedback = () => {
 
         {!showFeedbackForm && 
         <div className='text-center'>
-            <button className='btn' onClick={() => setShowFeedbackForm(true)}>
+            <button 
+            className='btn' 
+            onClick={() => setShowFeedbackForm(true)}>
                 Give feedback
-            </button>
+            </button> 
         </div>}
 
         {showFeedbackForm && <FeedbackForm />}
