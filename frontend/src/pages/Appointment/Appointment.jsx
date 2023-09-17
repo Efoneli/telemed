@@ -1,6 +1,7 @@
 import React from 'react'
 import avatatIcon from '../../assets/images/avatar-icon.png'
 import DateTime from './DateTime';
+import LocationPicker from '../Location/LocationPicker';
 
 const Appointment = () => {
   return (
@@ -32,6 +33,7 @@ const Appointment = () => {
 
         <h3 className='text__para font-bold'>DATE & TIME</h3>
         <DateTime />
+
         <hr />
 
         <label>
