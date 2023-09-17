@@ -37,7 +37,9 @@ const Home = () => {
                   delectus, perspiciatis repudiandae inventore laudantium
                   accusantium non vitae odit eum voluptatibus pariatur.
                 </p>
-                <button className="btn">Request an application</button>
+                <Link to='/appointment'>
+                <button className="btn">Request an appointment</button>
+                </Link>
               </div>
 
               {/* hero counter  */}

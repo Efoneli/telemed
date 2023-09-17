@@ -5,6 +5,7 @@ import Signup from '../pages/Signup'
 import Contact from '../pages/Contact'
 import Doctors from '../pages/Doctors/Doctors'
 import DoctorsDetails from '../pages/Doctors/DoctorsDetails'
+import Appointment from '../pages/Appointment/Appointment'
 
 import { Routes, Route } from 'react-router'
 
@@ -19,6 +20,7 @@ const Routers = () => {
       <Route path="/register" element={<Signup />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/services" element={<Services />} />
+      <Route path="/appointment" element={<Appointment />} />
     </Routes>
   )
 }
