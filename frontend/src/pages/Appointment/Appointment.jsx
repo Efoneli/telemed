@@ -28,7 +28,7 @@ const Appointment = () => {
 
         <h3 className='text__para font-bold'>SERVICE</h3>
 
-        <p className="flex items-center gap-[6px] lg:gap-[10px] mt-2 mb-3 lg:mt-[18px]"><span className="text-[10px] leading-3 lg:text-[16px] lg:leading-[22px] font-[700] text-headingColor">Medical Officer </span>  -  Video Consultation ($15)</p>
+        <p className="flex items-center gap-[6px] lg:gap-[10px] mt-2 mb-3 lg:mt-[18px]"><span className="text-[10px] leading-3 lg:text-[16px] lg:leading-[22px] font-[700] text-headingColor">Medical Officer </span>  -  Video Consultation <span className='font-bold'> ($15)</span></p>
 
         <h3 className='text__para font-bold'>DATE & TIME</h3>
         <DateTime />

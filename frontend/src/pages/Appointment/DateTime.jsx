@@ -10,7 +10,7 @@ const DateTimePicker = () => {
   };
 
   return (
-    <div>
+    <div className='my-4 border border-solid p-2 py-2'>
       <DatePicker
         selected={selectedDate}
         onChange={handleDateChange}
