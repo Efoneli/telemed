@@ -12,9 +12,7 @@ const DoctorsAbout = () => {
           </span>
         </h3>
         <p className="text__para">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam fugiat
-          sunt nesciunt illum, quisquam cupiditate fuga saepe reiciendis
-          dignissimos iure.
+        Dr. Muhibur Rahman is a distinguished surgeon with a remarkable career marked by excellence and compassion. With extensive training and expertise in various surgical fields, including general and minimally invasive surgery, he has consistently delivered top-tier medical care. Dr. Rahman's patient-centered approach, coupled with his dedication to educating the next generation of medical professionals, has made him a respected figure in the medical community. Beyond his practice, he has also contributed to medical research and humanitarian missions, embodying the values of a dedicated and compassionate healthcare professional.
         </p>
       </div>
 

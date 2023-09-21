@@ -35,8 +35,7 @@ const DoctorsDetails = () => {
                 </div>
 
                 <p className="text__para text-[14px] leading-5 md:text-15px] lg:max-w-[390px]">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Facilis, molestias.
+                Muhibur Rahman, Surgeon and volunteering Para-medic at Hope's motherless
                 </p>
               </div>
             </div>

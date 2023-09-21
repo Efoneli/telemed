@@ -6,7 +6,7 @@ import Location from '../Location/Location';
 const Appointment = () => {
   return (
     <>
-      <div className='mx-4 p-2'>
+      <div className="max-w-[1170px] px-5 mx-auto">
         <h2 className='heading text-center m-3'>
           Book an Appointment
         </h2>
